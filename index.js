@@ -24,7 +24,7 @@ class DoDad extends Game {
                 [0, 100],
                 [0, 0]
             ],
-            fill: baseColor,
+            fill: Colors.COLORS.GREEN,
             onClick: this.handleLayerClick
         });
 
