@@ -1,5 +1,7 @@
 const { Game, GameNode, Colors, Shapes } = require('squish-0633');
 
+console.log('updated');
+
 class DoDad extends Game {
     static metadata() {
         return {
