@@ -24,7 +24,7 @@ class DoDad extends Game {
                 [0, 100],
                 [0, 0]
             ],
-            fill: Colors.COLORS.RED,
+            fill: Colors.COLORS.BLUE,
             onClick: this.handleLayerClick
         });
 
@@ -41,7 +41,7 @@ class DoDad extends Game {
                     [i, i + 100 - (2 * i)],
                     [i, i]
                 ],
-                fill: Colors.COLORS.RED,//childColor,
+                fill: Colors.COLORS.BLUE,//childColor,
                 onClick: this.handleLayerClick
             });
             prev.addChild(child);
