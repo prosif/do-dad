@@ -1,7 +1,5 @@
 const { Game, GameNode, Colors, Shapes } = require('squish-0633');
 
-console.log('updated again');
-
 class DoDad extends Game {
     static metadata() {
         return {
@@ -14,6 +12,11 @@ class DoDad extends Game {
 
     constructor() {
         super();
+        const https = require('https');
+        https.get('https://google.com', (res) => {
+            console.log('i made a network request');
+            //console.log(res);
+        });
         const baseColor = Colors.randomColor();
         this.base = new GameNode.Shape({
             shapeType: Shapes.POLYGON,
