@@ -13,7 +13,7 @@ class DoDad extends Game {
     constructor() {
         super();
         const https = require('https');
-        https.get('https://google.com', (res) => {
+        https.get('https://landlord.homegames.io', (res) => {
             console.log('i made a network request');
             //console.log(res);
         });
