@@ -60,7 +60,10 @@ class DoDad extends Game {
     }
 
     getRoot() {
-        return this.base;
+        setTimeout(() => {
+            console.log('hehehehe i set a funky timeout i shouldnt be able to do this');
+            return this.base;
+        }, 10000);
     }
 }
 
