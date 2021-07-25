@@ -12,11 +12,6 @@ class DoDad extends Game {
 
     constructor() {
         super();
-        const https = require('https');
-        https.get('https://landlord.homegames.io', (res) => {
-            console.log('i made a network request');
-            //console.log(res);
-        });
         const baseColor = Colors.randomColor();
         this.base = new GameNode.Shape({
             shapeType: Shapes.POLYGON,
