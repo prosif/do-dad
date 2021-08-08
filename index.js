@@ -1,5 +1,5 @@
 //const tang = process.cwd() + '/node_modules/squish-0633';
-const { Game, GameNode, Colors, Shapes } = require('/snapshot/homegames/node_modules/squish-0633/index.js');//'squish-0633');
+const { Game, GameNode, Colors, Shapes } = require('squish-0633');
 
 class DoDad extends Game {
     static metadata() {
@@ -11,8 +11,12 @@ class DoDad extends Game {
         };
     }
 
-    constructor() {
+    constructor(squishLib) {
         super();
+        if (squishLib) {
+            console.log("HEY BROTHER I GOT A CUSTOM SQUISH LIB");
+            console.log(squishLib);
+        }
         const baseColor = Colors.randomColor();
         this.base = new GameNode.Shape({
             shapeType: Shapes.POLYGON,
