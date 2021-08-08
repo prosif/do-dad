@@ -1,4 +1,6 @@
-const { Game, GameNode, Colors, Shapes } = require('squish-0633');
+const tang = process.cwd() + '/node_modules/squish-0633';
+console.log(tang);
+const { Game, GameNode, Colors, Shapes } = require(tang);//'squish-0633');
 
 class DoDad extends Game {
     static metadata() {
