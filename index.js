@@ -1,7 +1,5 @@
 //const tang = process.cwd() + '/node_modules/squish-0633';
 
-console.log("PAIN without love");
-console.log(process.env);
 let Game, GameNode, Colors, Shapes;
 
 //const { Game, GameNode, Colors, Shapes } = require('squish-0633');
@@ -39,12 +37,8 @@ class DoDad extends Game {
         };
     }
 
-    constructor(squishLib) {
+    constructor() {
         super();
-        if (squishLib) {
-            console.log("HEY BROTHER I GOT A CUSTOM SQUISH LIB");
-            console.log(squishLib);
-        }
         const baseColor = Colors.randomColor();
         this.base = new GameNode.Shape({
             shapeType: Shapes.POLYGON,
