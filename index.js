@@ -1,5 +1,31 @@
 //const tang = process.cwd() + '/node_modules/squish-0633';
-const { Game, GameNode, Colors, Shapes } = require('squish-0633');
+
+let Game, GameNode, Colors, Shapes;
+
+//const { Game, GameNode, Colors, Shapes } = require('squish-0633');
+
+if (process.env.STAGE == 'PRODUCTION') {
+    const squishMapString = process.env.SQUISH_MAP;
+    console.log("need to load squish from this");
+    console.log(squishMapString);
+    if (!squishMapString) {
+        console.log('Running in non-test environment requires squish_map environment variable');
+        process.exit();
+    } else {
+        const squishMap = JSON.parse(squishMapString);
+        const squishStuff = require(squishMap['squish-0633']);
+        Game = squishStuff.Game;
+        GameNode = squishStuff.GameNode;
+        Colors = squishStuff.Colors;
+        Shapes = squishStuff.Shapes;
+    }
+} else {
+    const squishStuff = require('squish-0633');
+    Game = squishStuff.Game;
+    GameNode = squishStuff.GameNode;
+    Colors = squishStuff.Colors;
+    Shapes = squishStuff.Shapes;
+}
 
 class DoDad extends Game {
     static metadata() {
