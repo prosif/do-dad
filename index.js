@@ -1,5 +1,7 @@
 //const tang = process.cwd() + '/node_modules/squish-0633';
 
+console.log("PAIN without love");
+console.log(process.env);
 let Game, GameNode, Colors, Shapes;
 
 //const { Game, GameNode, Colors, Shapes } = require('squish-0633');
