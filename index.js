@@ -66,7 +66,7 @@ class DoDad extends Game {
                     [i, i + 100 - (2 * i)],
                     [i, i]
                 ],
-                fill: Colors.COLORS.RED,//childColor,
+                fill: childColor,
                 onClick: this.handleLayerClick
             });
             prev.addChild(child);
