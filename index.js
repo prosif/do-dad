@@ -49,7 +49,7 @@ class DoDad extends Game {
                 [0, 100],
                 [0, 0]
             ],
-            fill: Colors.COLORS.RED,
+            fill: Colors.randomColor(),
             onClick: this.handleLayerClick
         });
 
