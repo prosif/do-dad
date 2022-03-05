@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/prosif/do-dad#readme",
   "dependencies": {
-    "squish-0633": "npm:squishjs@0.6.33"
+    "squish-071": "npm:squishjs@0.7.1"
   }
 }

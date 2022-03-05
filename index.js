@@ -20,7 +20,7 @@ if (process.env.STAGE == 'PRODUCTION') {
         Shapes = squishStuff.Shapes;
     }
 } else {
-    const squishStuff = require('squish-0633');
+    const squishStuff = require('squish-071');
     Game = squishStuff.Game;
     GameNode = squishStuff.GameNode;
     Colors = squishStuff.Colors;
@@ -31,7 +31,7 @@ class DoDad extends Game {
     static metadata() {
         return {
             aspectRatio: {x: 16, y: 9},
-            squishVersion: '0633',
+            squishVersion: '0710',
             author: 'Joseph Garcia',
             thumbnail: 'https://d3lgoy70hwd3pc.cloudfront.net/thumbnails/layer-test.png'
         };
