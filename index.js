@@ -20,7 +20,7 @@ if (process.env.STAGE == 'PRODUCTION') {
         Shapes = squishStuff.Shapes;
     }
 } else {
-    const squishStuff = require('squish-071');
+    const squishStuff = require('squish-0710');
     Game = squishStuff.Game;
     GameNode = squishStuff.GameNode;
     Colors = squishStuff.Colors;
