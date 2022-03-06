@@ -86,8 +86,8 @@ class DoDad extends Game {
         this.fill = newColor;
     }
 
-    getRoot() {
-        return this.base;
+    getLayers() {
+        return [{root: this.base}];
     }
 }
 
