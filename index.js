@@ -35,7 +35,7 @@ class DoDad extends Game {
             aspectRatio: {x: 16, y: 9},
             squishVersion: '0740',
             author: 'Joseph Garcia',
-            thumbnail: 'https://d3lgoy70hwd3pc.cloudfront.net/thumbnails/layer-test.png'
+            thumbnail: 'dcd6e74ff94d51f9f323ce00669d98d4'
         };
     }
 
