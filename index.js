@@ -4,34 +4,36 @@ let Game, GameNode, Colors, Shapes;
 
 //const { Game, GameNode, Colors, Shapes } = require('squish-0633');
 
-if (process.env.STAGE == 'PRODUCTION') {
-    const squishMapString = process.env.SQUISH_MAP;
-    console.log("need to load squish from this");
-    console.log(squishMapString);
-    if (!squishMapString) {
-        console.log('Running in non-test environment requires squish_map environment variable');
-        process.exit();
-    } else {
-        const squishMap = JSON.parse(squishMapString);
-        const squishStuff = require(squishMap['squish-0633']);
-        Game = squishStuff.Game;
-        GameNode = squishStuff.GameNode;
-        Colors = squishStuff.Colors;
-        Shapes = squishStuff.Shapes;
-    }
-} else {
-    const squishStuff = require('squish-0710');
+//if (process.env.STAGE == 'PRODUCTION') {
+//    const squishMapString = process.env.SQUISH_MAP;
+//    console.log("need to load squish from this");
+//    console.log(squishMapString);
+//    if (!squishMapString) {
+//        console.log('Running in non-test environment requires squish_map environment variable');
+//        process.exit();
+//    } else {
+//        const squishMap = JSON.parse(squishMapString);
+//        const squishStuff = require(squishMap['squish-0633']);
+//        Game = squishStuff.Game;
+//        GameNode = squishStuff.GameNode;
+//        Colors = squishStuff.Colors;
+//        Shapes = squishStuff.Shapes;
+//    }
+//} else {
+    const squishStuff = require('squish-0740');
     Game = squishStuff.Game;
     GameNode = squishStuff.GameNode;
     Colors = squishStuff.Colors;
     Shapes = squishStuff.Shapes;
-}
+//}
+
+console.log('helllllo');
 
 class DoDad extends Game {
     static metadata() {
         return {
             aspectRatio: {x: 16, y: 9},
-            squishVersion: '0710',
+            squishVersion: '0740',
             author: 'Joseph Garcia',
             thumbnail: 'https://d3lgoy70hwd3pc.cloudfront.net/thumbnails/layer-test.png'
         };
