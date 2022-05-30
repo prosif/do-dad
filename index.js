@@ -29,7 +29,7 @@ class DoDad extends Game {
         const increment = 1;
         let prev = this.base;
         for (let i = increment; i < 50; i+= 2 * increment) {
-            const childColor = Colors.GREEN;
+            const childColor = Colors.YELLOW;
             const child = new GameNode.Shape({
                 shapeType: Shapes.POLYGON,
                 coordinates2d: [
