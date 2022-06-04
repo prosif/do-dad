@@ -39,3 +39,5 @@ const layerBase = (handleLayerClick) => {
         return base;
 
 }
+
+module.exports = layerBase;
