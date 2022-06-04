@@ -1,4 +1,5 @@
-const { Game, GameNode, Colors, Shapes } = require('squish-0740');
+const { Game, GameNode, Colors, Shapes } = require('squish-0750');
+const layerBase = require('./src/layer-base');
 
 class DoDad extends Game {
     static metadata() {
@@ -15,36 +16,11 @@ class DoDad extends Game {
         const baseColor = Colors.randomColor();
         this.base = new GameNode.Shape({
             shapeType: Shapes.POLYGON,
-            coordinates2d: [
-                [0, 0],
-                [100, 0],
-                [100, 100],
-                [0, 100],
-                [0, 0]
-            ],
-            fill: Colors.randomColor(),
-            onClick: this.handleLayerClick
+            coordinates2d: ShapeUtils.rectangle(0, 0, 0, 0)
         });
 
-        const increment = 1;
-        let prev = this.base;
-        for (let i = increment; i < 50; i+= 2 * increment) {
-            const childColor = Colors.YELLOW;
-            const child = new GameNode.Shape({
-                shapeType: Shapes.POLYGON,
-                coordinates2d: [
-                    [i, i],
-                    [i + 100 - (2 * i), i],
-                    [i + 100 - (2 * i), i + 100 - (2 * i)],
-                    [i, i + 100 - (2 * i)],
-                    [i, i]
-                ],
-                fill: childColor,
-                onClick: this.handleLayerClick
-            });
-            prev.addChild(child);
-            prev = child;
-        }
+        const layerBase = layerBase(this.handleLayerClick);
+        this.base.addChild(layerBase);
     }
 
     handleNewPlayer() {
