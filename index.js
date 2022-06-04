@@ -1,5 +1,11 @@
 const { ShapeUtils, Game, GameNode, Colors, Shapes } = require('squish-0750');
-const layerBase = require('./src/layer-base');
+const path = require('path');
+
+const baseDir = path.dirname(require.main.filename);
+
+console.log('base dir');
+console.log(baseDir);
+const layerBase = require(baseDir + '/src/layer-base');
 
 class DoDad extends Game {
     static metadata() {
