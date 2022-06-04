@@ -5,7 +5,7 @@ class DoDad extends Game {
     static metadata() {
         return {
             aspectRatio: {x: 16, y: 9},
-            squishVersion: '0740',
+            squishVersion: '0750',
             author: 'Joseph Garcia',
             thumbnail: 'dcd6e74ff94d51f9f323ce00669d98d4'
         };
