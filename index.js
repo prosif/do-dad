@@ -33,7 +33,7 @@ class DoDad extends Game {
     }
 
     handleLayerClick() {
-        const newColor = Colors.COLORS.GREEN;//randomColor();
+        const newColor = Colors.COLORS.BLUE;//randomColor();
         this.color = newColor;
         this.fill = newColor;
     }
