@@ -17,7 +17,7 @@ const layerBase = (handleLayerClick) => {
 
 
         const increment = 1;
-        let prev = this.base;
+        let prev = base;
         for (let i = increment; i < 50; i+= 2 * increment) {
             const childColor = Colors.randomColor();
             const child = new GameNode.Shape({

@@ -1,4 +1,4 @@
-const { Game, GameNode, Colors, Shapes } = require('squish-0750');
+const { ShapeUtils, Game, GameNode, Colors, Shapes } = require('squish-0750');
 const layerBase = require('./src/layer-base');
 
 class DoDad extends Game {
