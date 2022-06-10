@@ -1,4 +1,5 @@
-const { Game, GameNode, Colors, Shapes } = require('squish-0750');
+const process = require('process');
+const { Game, GameNode, Colors, Shapes } = require(process.env.SQUISH_PATH);
 
 const layerBase = (handleLayerClick) => {
 

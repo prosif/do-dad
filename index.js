@@ -1,4 +1,5 @@
-const { ShapeUtils, Game, GameNode, Colors, Shapes } = require('squish-0750');
+const process = require('process');
+const { Game, GameNode, Colors, Shapes } = require(process.env.SQUISH_PATH);
 
 const layerBase = require(__dirname + '/src/layer-base');
 
@@ -20,8 +21,6 @@ class DoDad extends Game {
             coordinates2d: ShapeUtils.rectangle(0, 0, 0, 0)
         });
 
-        console.log('this is different');
-
         const layerBaseNode = layerBase(this.handleLayerClick);
         this.base.addChild(layerBaseNode);
     }
@@ -33,7 +32,7 @@ class DoDad extends Game {
     }
 
     handleLayerClick() {
-        const newColor = Colors.COLORS.PURPLE;//randomColor();
+        const newColor = Colors.COLORS.PINK;//randomColor();
         this.color = newColor;
         this.fill = newColor;
     }
