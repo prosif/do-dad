@@ -1,5 +1,5 @@
 const process = require('process');
-const { Game, GameNode, Colors, Shapes, ShapeUtils } = require(process.env.SQUISH_PATH);
+const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require(process.env.SQUISH_PATH);
 
 
 const layerBase = require(__dirname + '/src/layer-base');
@@ -8,7 +8,7 @@ class DoDad extends Game {
     static metadata() {
         return {
             aspectRatio: {x: 16, y: 9},
-            squishVersion: '0750',
+            squishVersion: '0756',
             author: 'Joseph Garcia',
             thumbnail: 'dcd6e74ff94d51f9f323ce00669d98d4'
         };
@@ -33,7 +33,7 @@ class DoDad extends Game {
     }
 
     handleLayerClick() {
-        const newColor = Colors.COLORS.YELLOW;//randomColor();
+        const newColor = Colors.COLORS.PINK;//randomColor();
         this.color = newColor;
         this.fill = newColor;
     }
