@@ -1,5 +1,5 @@
 const process = require('process');
-const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require(process.env.SQUISH_PATH);
+const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require('squish-0756');
 
 const layerBase = require(__dirname + '/src/layer-base');
 
