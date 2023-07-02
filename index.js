@@ -3,7 +3,7 @@ const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require('squish-07
 
 const layerBase = require(__dirname + '/src/layer-base');
 
-console.log('testing');
+console.log('testing again i hope this works');
 
 class DoDad extends Game {
     static metadata() {
