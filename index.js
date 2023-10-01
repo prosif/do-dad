@@ -1,15 +1,15 @@
 const process = require('process');
-const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require('squish-0756');
+const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require('squish-1005');
 
 const layerBase = require(__dirname + '/src/layer-base');
 
-console.log('testing again i hope this works');
+console.log('testing again i hope this works but this is updated');
 
 class DoDad extends Game {
     static metadata() {
         return {
             aspectRatio: {x: 16, y: 9},
-            squishVersion: '0756',
+            squishVersion: '1005',
             author: 'Joseph Garcia',
             thumbnail: 'dcd6e74ff94d51f9f323ce00669d98d4'
         };
