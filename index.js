@@ -21,7 +21,7 @@ class DoDad extends Game {
             coordinates2d: ShapeUtils.rectangle(0, 0, 0, 0)
         });
 
-        console.log('change 2');
+        console.log('change 3');
 
         const layerBaseNode = layerBase(this.handleLayerClick);
         this.base.addChild(layerBaseNode);
