@@ -1,6 +1,7 @@
 const process = require('process');
 const { Asset, Game, GameNode, Colors, Shapes, ShapeUtils } = require(process.env.SQUISH_PATH);
 
+
 const layerBase = require(__dirname + '/src/layer-base');
 
 class DoDad extends Game {
